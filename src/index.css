@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --cream-50: #fdfbf7;
+    --cream-100: #fbf8f2;
+    --cream-200: #f7f3eb;
+    --cream-300: #efe8dc;
+    --cream-400: #e2d6c3;
+    --cream-500: #d4c4ad;
+    --cream-600: #b8a68d;
+    --cream-700: #8c785f;
+    --cream-800: #5c4e3e;
+
+    --neutral-950: #060609;
+    --neutral-900: #08080c;
+    --neutral-850: #0e0e14;
+    --neutral-800: #14141c;
+    --neutral-700: #1f1f2a;
+    --neutral-600: #2e2d3b;
+    --neutral-500: #4a485a;
+    --neutral-400: #6a687c;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #08080c;
+    color: #f7f3eb;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(28, 28, 42, 0.6) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(35, 30, 48, 0.5) 0px, transparent 50%),
+      radial-gradient(at 50% 40%, rgba(14, 14, 22, 0.8) 0px, transparent 65%),
+      radial-gradient(at 100% 100%, rgba(24, 22, 34, 0.6) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(30, 26, 40, 0.5) 0px, transparent 50%);
+    background-attachment: fixed;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  .font-catalogue {
+    font-family: 'Catalogue', 'Unbounded', 'Syne', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Catalogue', 'Unbounded', 'Syne', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08080c;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e2d3b;
+  border-radius: 9999px;
+  border: 2px solid #08080c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4c4ad;
+}
+
+/* Luxury Warm Cream Surfaces - Designed as elegant ivory canvas cards */
+.glass-cream {
+  background: linear-gradient(175deg, #ffffff 0%, #fdfbf7 40%, #f6f1e7 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(8, 8, 12, 0.15);
+  color: #08080c;
+  box-shadow: 
+    0 25px 55px -12px rgba(0, 0, 0, 0.45),
+    0 4px 14px 0 rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-cream-card {
+  background: linear-gradient(170deg, #ffffff 0%, #fcf9f2 50%, #f5eee2 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(8, 8, 12, 0.14);
+  color: #08080c;
+  box-shadow: 
+    0 18px 40px -8px rgba(0, 0, 0, 0.35),
+    0 2px 8px 0 rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-cream-card:hover {
+  border-color: rgba(8, 8, 12, 0.3);
+  box-shadow: 
+    0 25px 50px -10px rgba(0, 0, 0, 0.5),
+    0 0 25px -3px rgba(212, 196, 173, 0.4),
+    inset 0 1px 2px 0 rgba(255, 255, 255, 1);
+  transform: translateY(-3px);
+}
+
+/* Solid Obsidian Neutral Black Contrast Card */
+.glass-obsidian-solid {
+  background: #08080c;
+  color: #f7f3eb;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.6);
+}
+
+/* Glow Utilities */
+.glow-cream-sm {
+  box-shadow: 0 0 20px -3px rgba(212, 196, 173, 0.45);
+}
+
+.glow-cream-md {
+  box-shadow: 0 0 35px -5px rgba(184, 166, 141, 0.4);
+}
+
+.glow-obsidian-sm {
+  box-shadow: 0 8px 25px -4px rgba(8, 8, 12, 0.2);
+}
+
+.text-gradient-obsidian {
+  background: linear-gradient(135deg, #050508 0%, #151520 60%, #2e2c3b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold-dark {
+  background: linear-gradient(135deg, #08080c 0%, #3a3328 50%, #685a47 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ambient glow animations */
+@keyframes ambientDrift {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -25px) scale(1.06); }
+  66% { transform: translate(-25px, 20px) scale(0.96); }
+}
+
+@keyframes pulseGlowSoft {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+.animate-ambient-drift {
+  animation: ambientDrift 16s ease-in-out infinite;
+}
+
+.animate-ambient-drift-rev {
+  animation: ambientDrift 20s ease-in-out infinite reverse;
+}
+
+.animate-pulse-soft {
+  animation: pulseGlowSoft 6s ease-in-out infinite;
+}
