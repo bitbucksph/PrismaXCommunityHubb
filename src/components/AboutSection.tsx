@@ -70,7 +70,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigate: _onNavig
               Hi, I'm <span className="font-black text-[#08080c]">Mike</span>. I'm a <span className="font-black text-[#08080c]">Stabilized Contributor</span> in the PrismaX community with a passion for Physical AI, robotics, and community building.
             </p>
             <p className="text-xs sm:text-sm text-[#1f1f2c] leading-relaxed font-medium">
-              I joined PrismaX on April 17, 2025. Since then, I've focused on creating educational content, designing promotional graphics, building interactive community games, and developing web applications that help introduce more people to the PrismaX ecosystem. My goal is to make Physical AI easier to understand through creative, educational, and engaging content.
+              I joined PrismaX on April 17, 2026. Since then, I've focused on creating educational content, designing promotional graphics, building interactive community games, and developing web applications that help introduce more people to the PrismaX ecosystem. My goal is to make Physical AI easier to understand through creative, educational, and engaging content.
             </p>
 
             {/* Attached Portfolio Link Card */}
