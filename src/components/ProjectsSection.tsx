@@ -166,10 +166,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 {/* Content Details */}
                 <div className="space-y-2.5 flex-1 flex flex-col justify-between relative z-10 text-left">
                   <div>
-                    <h3 className="text-base sm:text-lg font-black text-[#08080c] dark:text-[#f7f3eb] group-hover:text-black dark:group-hover:text-white transition-colors font-heading leading-tight">
+                    <h3 className="text-base sm:text-lg font-black text-[#08080c] group-hover:text-black transition-colors font-heading leading-tight">
                       {link.title}
                     </h3>
-                    <p className="mt-1 text-xs text-[#08080c] dark:text-[#c4c2d4] leading-relaxed font-medium">
+                    <p className="mt-1 text-xs text-[#1a1a24] leading-relaxed font-semibold">
                       {link.description}
                     </p>
                   </div>
@@ -179,7 +179,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     {link.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-0.5 rounded-md text-[10px] font-mono-code bg-[#efe8dc] dark:bg-[#1a1a2a] text-[#08080c] dark:text-[#a09eb5] font-black border border-[#08080c]/12 dark:border-white/10"
+                        className="px-2 py-0.5 rounded-md text-[10px] font-mono-code bg-[#efe8dc] text-[#08080c] font-black border border-[#08080c]/15"
                       >
                         #{tag}
                       </span>
@@ -187,7 +187,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="pt-3 mt-1.5 border-t border-[#08080c]/15 dark:border-white/10 flex items-center">
+                  <div className="pt-3 mt-1.5 border-t border-[#08080c]/15 flex items-center">
                     <a
                       href={link.url}
                       target="_blank"
@@ -195,9 +195,9 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                       onClick={(e) => {
                         e.stopPropagation();
                       }}
-                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl bg-[#08080c] dark:bg-[#1a1a2a] hover:bg-[#181824] dark:hover:bg-[#252538] text-[#f7f3eb] font-extrabold text-xs tracking-wider uppercase transition-all active:scale-95 shadow-[0_4px_12px_rgba(8,8,12,0.2)] border border-transparent dark:border-white/15 cursor-pointer group/btn"
+                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl bg-[#08080c] hover:bg-[#181824] text-[#f7f3eb] font-extrabold text-xs tracking-wider uppercase transition-all active:scale-95 shadow-[0_4px_12px_rgba(8,8,12,0.2)] border border-[#08080c] cursor-pointer group/btn"
                     >
-                      <span className="font-heading font-black">OFFICIAL LINK</span>
+                      <span className="font-heading font-black text-[#f7f3eb]">OFFICIAL LINK</span>
                       <ExternalLink className="w-3.5 h-3.5 text-[#d4c2a5] group-hover/btn:translate-x-0.5 transition-transform" />
                     </a>
                   </div>
@@ -207,21 +207,21 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           </div>
 
           {/* Descriptive Information Guide Box Beside the Card */}
-          <div className="lg:col-span-7 rounded-3xl glass-cream-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden text-left border border-[#08080c]/12 dark:border-white/12 shadow-sm">
+          <div className="lg:col-span-7 rounded-3xl glass-cream-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden text-left border border-[#08080c]/12 shadow-sm">
             {/* Ambient background glow */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4c4ad]/20 dark:bg-[#d4c4ad]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4c4ad]/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="space-y-4 relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono-code font-black bg-[#efe8dc] dark:bg-[#1a1a28] text-[#08080c] dark:text-[#f7f3eb] border border-[#08080c]/15 dark:border-white/15">
-                <Sparkles className="w-3.5 h-3.5 text-[#08080c] dark:text-[#d4c4ad]" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono-code font-black bg-[#efe8dc] text-[#08080c] border border-[#08080c]/15">
+                <Sparkles className="w-3.5 h-3.5 text-[#08080c]" />
                 <span className="uppercase tracking-wider">ECOSYSTEM & COMMUNITY GUIDE</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-black text-[#08080c] dark:text-[#f7f3eb] font-heading leading-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#08080c] font-heading leading-tight">
                 PrismaX Community & Ecosystem Overview
               </h3>
 
-              <div className="space-y-3.5 text-xs sm:text-sm text-[#08080c] dark:text-[#c4c2d4] font-medium leading-relaxed">
+              <div className="space-y-3.5 text-xs sm:text-sm text-[#1a1a24] font-medium leading-relaxed">
                 <p>
                   PrismaX continues to grow through the development of new tools, community projects, contributor initiatives, and ongoing ecosystem activity. As more information is shared across official announcements, social platforms, documentation, and community discussions, finding the right resources becomes harder for both new and existing members.
                 </p>
@@ -234,16 +234,16 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               </div>
             </div>
 
-            <div className="pt-5 mt-4 border-t border-[#08080c]/12 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 relative z-10">
+            <div className="pt-5 mt-4 border-t border-[#08080c]/12 flex flex-wrap items-center justify-between gap-3 relative z-10">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-xs font-mono-code font-bold text-[#08080c] dark:text-[#d4c4ad]">Official Source Verified</span>
+                <span className="text-xs font-mono-code font-bold text-[#08080c]">Official Source Verified</span>
               </div>
               <a
                 href="https://www.prismax.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-mono-code font-extrabold text-[#08080c] dark:text-[#f7f3eb] hover:underline"
+                className="inline-flex items-center gap-1.5 text-xs font-mono-code font-extrabold text-[#08080c] hover:underline"
               >
                 <span>Visit prismax.ai</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -264,11 +264,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 className="group relative flex-1 flex flex-col rounded-3xl glass-cream-card p-4 sm:p-5 overflow-hidden cursor-pointer"
               >
                 {/* Ambient hover glow inside card */}
-                <div className="absolute top-0 right-0 w-52 h-52 bg-[#d4c4ad]/25 dark:bg-[#d4c4ad]/10 rounded-full blur-3xl group-hover:bg-[#d4c4ad]/35 transition-all duration-500 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-52 h-52 bg-[#d4c4ad]/25 rounded-full blur-3xl group-hover:bg-[#d4c4ad]/35 transition-all duration-500 pointer-events-none" />
 
                 {/* Visual Preview Image */}
                 {link.previewImage && (
-                  <div className="relative rounded-2xl overflow-hidden mb-3.5 aspect-16/9 w-full bg-[#08080f] border border-[#08080c]/12 dark:border-white/10 group-hover:border-[#08080c]/30 dark:group-hover:border-white/25 transition-all">
+                  <div className="relative rounded-2xl overflow-hidden mb-3.5 aspect-16/9 w-full bg-[#08080f] border border-[#08080c]/12 group-hover:border-[#08080c]/30 transition-all">
                     <img
                       src={link.previewImage}
                       alt={link.title}
@@ -306,10 +306,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 {/* Content Details */}
                 <div className="space-y-2.5 flex-1 flex flex-col justify-between relative z-10 text-left">
                   <div>
-                    <h3 className="text-base sm:text-lg font-black text-[#08080c] dark:text-[#f7f3eb] group-hover:text-black dark:group-hover:text-white transition-colors font-heading leading-tight">
+                    <h3 className="text-base sm:text-lg font-black text-[#08080c] group-hover:text-black transition-colors font-heading leading-tight">
                       {link.title}
                     </h3>
-                    <p className="mt-1 text-xs text-[#08080c] dark:text-[#c4c2d4] leading-relaxed font-medium">
+                    <p className="mt-1 text-xs text-[#1a1a24] leading-relaxed font-semibold">
                       {link.description}
                     </p>
                   </div>
@@ -319,7 +319,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     {link.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-0.5 rounded-md text-[10px] font-mono-code bg-[#efe8dc] dark:bg-[#1a1a2a] text-[#08080c] dark:text-[#a09eb5] font-black border border-[#08080c]/12 dark:border-white/10"
+                        className="px-2 py-0.5 rounded-md text-[10px] font-mono-code bg-[#efe8dc] text-[#08080c] font-black border border-[#08080c]/12"
                       >
                         #{tag}
                       </span>
@@ -327,7 +327,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="pt-3 mt-1.5 border-t border-[#08080c]/15 dark:border-white/10 flex items-center">
+                  <div className="pt-3 mt-1.5 border-t border-[#08080c]/15 flex items-center">
                     <a
                       href={link.url}
                       target="_blank"
@@ -335,9 +335,9 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                       onClick={(e) => {
                         e.stopPropagation();
                       }}
-                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl bg-[#08080c] dark:bg-[#1a1a2a] hover:bg-[#181824] dark:hover:bg-[#252538] text-[#f7f3eb] font-extrabold text-xs tracking-wider uppercase transition-all active:scale-95 shadow-[0_4px_12px_rgba(8,8,12,0.2)] border border-transparent dark:border-white/15 cursor-pointer group/btn"
+                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl bg-[#08080c] hover:bg-[#181824] text-[#f7f3eb] font-extrabold text-xs tracking-wider uppercase transition-all active:scale-95 shadow-[0_4px_12px_rgba(8,8,12,0.2)] border border-[#08080c] cursor-pointer group/btn"
                     >
-                      <span className="font-heading font-black">OFFICIAL LINK</span>
+                      <span className="font-heading font-black text-[#f7f3eb]">OFFICIAL LINK</span>
                       <ExternalLink className="w-3.5 h-3.5 text-[#d4c2a5] group-hover/btn:translate-x-0.5 transition-transform" />
                     </a>
                   </div>
@@ -347,21 +347,21 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           </div>
 
           {/* Descriptive Information Guide Box Beside the Robot Control Center Card */}
-          <div className="lg:col-span-7 rounded-3xl glass-cream-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden text-left border border-[#08080c]/12 dark:border-white/12 shadow-sm">
+          <div className="lg:col-span-7 rounded-3xl glass-cream-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden text-left border border-[#08080c]/12 shadow-sm">
             {/* Ambient background glow */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4c4ad]/20 dark:bg-[#d4c4ad]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4c4ad]/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="space-y-4 relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono-code font-black bg-[#efe8dc] dark:bg-[#1a1a28] text-[#08080c] dark:text-[#f7f3eb] border border-[#08080c]/15 dark:border-white/15">
-                <Bot className="w-3.5 h-3.5 text-[#08080c] dark:text-[#d4c4ad]" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono-code font-black bg-[#efe8dc] text-[#08080c] border border-[#08080c]/15">
+                <Bot className="w-3.5 h-3.5 text-[#08080c]" />
                 <span className="uppercase tracking-wider">ROBOT OPERATIONS & TELEMETRY</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-black text-[#08080c] dark:text-[#f7f3eb] font-heading leading-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#08080c] font-heading leading-tight">
                 About the Robot Control Center
               </h3>
 
-              <div className="space-y-3.5 text-xs sm:text-sm text-[#08080c] dark:text-[#c4c2d4] font-medium leading-relaxed">
+              <div className="space-y-3.5 text-xs sm:text-sm text-[#1a1a24] font-medium leading-relaxed">
                 <p>
                   The PrismaX Robot Control Center brings every essential robot system into one connected and organized dashboard. It provides a central space for tracking verification quality, monitoring active robot operations, reviewing mission objectives, and following network activity as each task develops.
                 </p>
@@ -373,11 +373,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 </p>
 
                 {/* Clearer Arm System Structure Announcement */}
-                <div className="p-4 rounded-2xl bg-[#efe8dc]/90 dark:bg-[#1a1a28]/90 border border-[#08080c]/15 dark:border-white/12 space-y-2">
-                  <p className="font-bold text-xs sm:text-sm text-[#08080c] dark:text-[#f7f3eb]">
+                <div className="p-4 rounded-2xl bg-[#efe8dc]/90 border border-[#08080c]/15 space-y-2">
+                  <p className="font-bold text-xs sm:text-sm text-[#08080c]">
                     The PrismaX arm system now has a clearer structure.
                   </p>
-                  <div className="font-mono-code text-xs text-[#08080c] dark:text-[#d4c4ad] font-bold space-y-1">
+                  <div className="font-mono-code text-xs text-[#08080c] font-bold space-y-1">
                     <div>▪️ Training Arm Gold + Black</div>
                     <div>▪️ Arena Arm</div>
                     <div>▪️ Private Arm (invite-only)on active competition, and Private Arm remains invite-only. More structure. More room to grow.</div>
@@ -386,16 +386,16 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               </div>
             </div>
 
-            <div className="pt-5 mt-4 border-t border-[#08080c]/12 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 relative z-10">
+            <div className="pt-5 mt-4 border-t border-[#08080c]/12 flex flex-wrap items-center justify-between gap-3 relative z-10">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-xs font-mono-code font-bold text-[#08080c] dark:text-[#d4c4ad]">Live Platform Active</span>
+                <span className="text-xs font-mono-code font-bold text-[#08080c]">Live Platform Active</span>
               </div>
               <a
                 href="https://app.prismax.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-mono-code font-extrabold text-[#08080c] dark:text-[#f7f3eb] hover:underline"
+                className="inline-flex items-center gap-1.5 text-xs font-mono-code font-extrabold text-[#08080c] hover:underline"
               >
                 <span>Launch app.prismax.ai</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -458,10 +458,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 {/* Content Details */}
                 <div className="space-y-2.5 flex-1 flex flex-col justify-between relative z-10 text-left">
                   <div>
-                    <h3 className="text-base sm:text-lg font-black text-[#08080c] dark:text-[#f7f3eb] group-hover:text-black dark:group-hover:text-white transition-colors font-heading leading-tight">
+                    <h3 className="text-base sm:text-lg font-black text-[#08080c] group-hover:text-black transition-colors font-heading leading-tight">
                       {link.title}
                     </h3>
-                    <p className="mt-1 text-xs text-[#08080c] dark:text-[#c4c2d4] leading-relaxed font-medium">
+                    <p className="mt-1 text-xs text-[#1a1a24] leading-relaxed font-semibold">
                       {link.description}
                     </p>
                   </div>
@@ -471,7 +471,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     {link.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-0.5 rounded-md text-[10px] font-mono-code bg-[#efe8dc] dark:bg-[#1a1a2a] text-[#08080c] dark:text-[#a09eb5] font-black border border-[#08080c]/12 dark:border-white/10"
+                        className="px-2 py-0.5 rounded-md text-[10px] font-mono-code bg-[#efe8dc] text-[#08080c] font-black border border-[#08080c]/12"
                       >
                         #{tag}
                       </span>
@@ -479,7 +479,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="pt-3 mt-1.5 border-t border-[#08080c]/15 dark:border-white/10 flex items-center">
+                  <div className="pt-3 mt-1.5 border-t border-[#08080c]/15 flex items-center">
                     <a
                       href={link.url}
                       target="_blank"
@@ -487,9 +487,9 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                       onClick={(e) => {
                         e.stopPropagation();
                       }}
-                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl bg-[#08080c] dark:bg-[#1a1a2a] hover:bg-[#181824] dark:hover:bg-[#252538] text-[#f7f3eb] font-extrabold text-xs tracking-wider uppercase transition-all active:scale-95 shadow-[0_4px_12px_rgba(8,8,12,0.2)] border border-transparent dark:border-white/15 cursor-pointer group/btn"
+                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl bg-[#08080c] hover:bg-[#181824] text-[#f7f3eb] font-extrabold text-xs tracking-wider uppercase transition-all active:scale-95 shadow-[0_4px_12px_rgba(8,8,12,0.2)] border border-[#08080c] cursor-pointer group/btn"
                     >
-                      <span className="font-heading font-black">OFFICIAL LINK</span>
+                      <span className="font-heading font-black text-[#f7f3eb]">OFFICIAL LINK</span>
                       <ExternalLink className="w-3.5 h-3.5 text-[#d4c2a5] group-hover/btn:translate-x-0.5 transition-transform" />
                     </a>
                   </div>
@@ -499,17 +499,17 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           </div>
 
           {/* Descriptive Information Guide Box Beside the Role Progression Guide Card */}
-          <div className="lg:col-span-7 rounded-3xl glass-cream-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden text-left border border-[#08080c]/12 dark:border-white/12 shadow-sm">
+          <div className="lg:col-span-7 rounded-3xl glass-cream-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden text-left border border-[#08080c]/12 shadow-sm">
             {/* Ambient background glow */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4c4ad]/20 dark:bg-[#d4c4ad]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4c4ad]/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="space-y-4 relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono-code font-black bg-[#efe8dc] dark:bg-[#1a1a28] text-[#08080c] dark:text-[#f7f3eb] border border-[#08080c]/15 dark:border-white/15">
-                <BookOpen className="w-3.5 h-3.5 text-[#08080c] dark:text-[#d4c4ad]" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono-code font-black bg-[#efe8dc] text-[#08080c] border border-[#08080c]/15">
+                <BookOpen className="w-3.5 h-3.5 text-[#08080c]" />
                 <span className="uppercase tracking-wider">COMMUNITY ADVANCEMENT FRAMEWORK</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-black text-[#08080c] dark:text-[#f7f3eb] font-heading leading-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#08080c] font-heading leading-tight">
                 PrismaX Role Progression System
               </h3>
 
@@ -526,16 +526,16 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               </div>
             </div>
 
-            <div className="pt-5 mt-4 border-t border-[#08080c]/12 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 relative z-10">
+            <div className="pt-5 mt-4 border-t border-[#08080c]/12 flex flex-wrap items-center justify-between gap-3 relative z-10">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-xs font-mono-code font-bold text-[#08080c] dark:text-[#d4c4ad]">Official Playbook Verified</span>
+                <span className="text-xs font-mono-code font-bold text-[#08080c]">Official Playbook Verified</span>
               </div>
               <a
                 href="https://app.notion.com/p/PrismaX-Role-Progression-Guide-EN-3679646a007a8054937cc7f8124ac4b5"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-mono-code font-extrabold text-[#08080c] dark:text-[#f7f3eb] hover:underline"
+                className="inline-flex items-center gap-1.5 text-xs font-mono-code font-extrabold text-[#08080c] hover:underline"
               >
                 <span>Open Notion Guide</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -556,11 +556,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 className="group relative flex-1 flex flex-col rounded-3xl glass-cream-card p-4 sm:p-5 overflow-hidden cursor-pointer"
               >
                 {/* Ambient hover glow inside card */}
-                <div className="absolute top-0 right-0 w-52 h-52 bg-[#d4c4ad]/25 dark:bg-[#d4c4ad]/10 rounded-full blur-3xl group-hover:bg-[#d4c4ad]/35 transition-all duration-500 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-52 h-52 bg-[#d4c4ad]/25 rounded-full blur-3xl group-hover:bg-[#d4c4ad]/35 transition-all duration-500 pointer-events-none" />
 
                 {/* Visual Preview Image */}
                 {link.previewImage && (
-                  <div className="relative rounded-2xl overflow-hidden mb-3.5 aspect-16/9 w-full bg-[#08080f] border border-[#08080c]/12 dark:border-white/10 group-hover:border-[#08080c]/30 dark:group-hover:border-white/25 transition-all">
+                  <div className="relative rounded-2xl overflow-hidden mb-3.5 aspect-16/9 w-full bg-[#08080f] border border-[#08080c]/12 group-hover:border-[#08080c]/30 transition-all">
                     <img
                       src={link.previewImage}
                       alt={link.title}
@@ -598,10 +598,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 {/* Content Details */}
                 <div className="space-y-2.5 flex-1 flex flex-col justify-between relative z-10 text-left">
                   <div>
-                    <h3 className="text-base sm:text-lg font-black text-[#08080c] dark:text-[#f7f3eb] group-hover:text-black dark:group-hover:text-white transition-colors font-heading leading-tight">
+                    <h3 className="text-base sm:text-lg font-black text-[#08080c] group-hover:text-black transition-colors font-heading leading-tight">
                       {link.title}
                     </h3>
-                    <p className="mt-1 text-xs text-[#08080c] dark:text-[#c4c2d4] leading-relaxed font-medium">
+                    <p className="mt-1 text-xs text-[#1a1a24] leading-relaxed font-semibold">
                       {link.description}
                     </p>
                   </div>
@@ -611,7 +611,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                     {link.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-0.5 rounded-md text-[10px] font-mono-code bg-[#efe8dc] dark:bg-[#1a1a2a] text-[#08080c] dark:text-[#a09eb5] font-black border border-[#08080c]/12 dark:border-white/10"
+                        className="px-2 py-0.5 rounded-md text-[10px] font-mono-code bg-[#efe8dc] text-[#08080c] font-black border border-[#08080c]/12"
                       >
                         #{tag}
                       </span>
@@ -619,7 +619,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="pt-3 mt-1.5 border-t border-[#08080c]/15 dark:border-white/10 flex items-center">
+                  <div className="pt-3 mt-1.5 border-t border-[#08080c]/15 flex items-center">
                     <a
                       href={link.url}
                       target="_blank"
@@ -627,9 +627,9 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                       onClick={(e) => {
                         e.stopPropagation();
                       }}
-                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl bg-[#08080c] dark:bg-[#1a1a2a] hover:bg-[#181824] dark:hover:bg-[#252538] text-[#f7f3eb] font-extrabold text-xs tracking-wider uppercase transition-all active:scale-95 shadow-[0_4px_12px_rgba(8,8,12,0.2)] border border-transparent dark:border-white/15 cursor-pointer group/btn"
+                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl bg-[#08080c] hover:bg-[#181824] text-[#f7f3eb] font-extrabold text-xs tracking-wider uppercase transition-all active:scale-95 shadow-[0_4px_12px_rgba(8,8,12,0.2)] border border-[#08080c] cursor-pointer group/btn"
                     >
-                      <span className="font-heading font-black">OFFICIAL LINK</span>
+                      <span className="font-heading font-black text-[#f7f3eb]">OFFICIAL LINK</span>
                       <ExternalLink className="w-3.5 h-3.5 text-[#d4c2a5] group-hover/btn:translate-x-0.5 transition-transform" />
                     </a>
                   </div>
@@ -639,17 +639,17 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           </div>
 
           {/* Descriptive Information Guide Box Beside the Whitepaper Card */}
-          <div className="lg:col-span-7 rounded-3xl glass-cream-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden text-left border border-[#08080c]/12 dark:border-white/12 shadow-sm">
+          <div className="lg:col-span-7 rounded-3xl glass-cream-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden text-left border border-[#08080c]/12 shadow-sm">
             {/* Ambient background glow */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4c4ad]/20 dark:bg-[#d4c4ad]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4c4ad]/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="space-y-4 relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono-code font-black bg-[#efe8dc] dark:bg-[#1a1a28] text-[#08080c] dark:text-[#f7f3eb] border border-[#08080c]/15 dark:border-white/15">
-                <FileText className="w-3.5 h-3.5 text-[#08080c] dark:text-[#d4c4ad]" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono-code font-black bg-[#efe8dc] text-[#08080c] border border-[#08080c]/15">
+                <FileText className="w-3.5 h-3.5 text-[#08080c]" />
                 <span className="uppercase tracking-wider">WHITEPAPER & TECHNICAL FOUNDATION</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-black text-[#08080c] dark:text-[#f7f3eb] font-heading leading-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-[#08080c] font-heading leading-tight">
                 PrismaX Whitepaper Guide & Overview
               </h3>
 
@@ -666,7 +666,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               </div>
             </div>
 
-            <div className="pt-5 mt-4 border-t border-[#08080c]/12 dark:border-white/10 flex flex-wrap items-center justify-between gap-3 relative z-10">
+            <div className="pt-5 mt-4 border-t border-[#08080c]/12 flex flex-wrap items-center justify-between gap-3 relative z-10">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="text-xs font-mono-code font-bold text-[#08080c]">Official Document Verified</span>
