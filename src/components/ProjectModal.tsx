@@ -55,6 +55,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ link, onClose }) => 
             src={link.previewImage}
             alt={link.title}
             className="w-full h-full object-cover filter contrast-110 brightness-95"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).src = 'https://i.imgur.com/s99rzD3.png';
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#fdfbf7] dark:from-[#11111a] via-transparent to-black/30" />
 
